@@ -1,0 +1,145 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: chelsa;
+    src: url(/fonts/chelsea/ChelseaMarket-Regular.woff);
+}
+
+.chelsa {
+    font-family: chelsa;
+}
+
+.container1::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    z-index: -1;
+    background-image: url(/img/g.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+body {
+    margin: 0%;
+}
+
+ul {
+    list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --bck: #239232;
+}
+
+
+
+.container {
+    margin: auto;
+    padding: 15px 10px;
+    background-color: transparent;
+
+}
+
+.flex {
+    display: flex;
+
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.ali {
+    align-items: center;
+}
+
+.drop>ul>li>a {
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a {
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+a.active,
+a:hover {
+    background-color: rgb(35, 144, 239);
+}
+
+
+
+h1 {
+    position: absolute;
+    left: 60px;
+}
+
+input,
+label {
+    position: absolute;
+    left: 30px;
+    font-size: 22px;
+    top: 10px;
+}
+
+input {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar ul {
+    position: absolute;
+    top: 47px;
+    left: -200px;
+    background-color: transparent;
+    height: 92vh;
+    width: 30vh;
+    font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+.sidebar ul li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 30px 5px;
+}
+
+input:checked~ul {
+    left: 0px;
+}
+
+label:hover {
+    color: aliceblue;
+
+}
